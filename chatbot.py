@@ -29,10 +29,47 @@ def main():
     # Título y texto de bienvenida
     st.title("FunesBot: First Model")
     st.write("Welcome! This is a chatbot created by our team for the Data Science Batch 1203 Le Wagon, Buenos Aires. It can answer your questions about War and Peace by Tolstoy. Please enter your questions in the text field below.")
-    st.image(
+    ran_gif = random.randint(1,5)
+
+    if ran_gif == 1:
+        st.image(
         "https://i.gifer.com/Ao.gif",
-        width=200,
+        width=400,
     )
+
+    if ran_gif == 2:
+        st.image(
+            "https://i.gifer.com/48Z.gif",
+            width = 400,
+
+        )
+
+
+    if ran_gif == 3:
+        st.image(
+            "https://i.gifer.com/2GU.gif",
+                    width = 400,
+
+        )
+
+
+
+
+    if ran_gif == 4:
+        st.image(
+            "https://i.gifer.com/Aw.gif",
+                                width = 400,
+
+        )
+
+
+    if ran_gif == 5:
+        st.image(
+            "https://i.gifer.com/A7PB.gif",
+                                width = 400,
+
+        )
+
     # Lista para almacenar el historial de preguntas y respuestas
     if 'message' not in st.session_state:
         st.session_state['message'] = []
